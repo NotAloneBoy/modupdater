@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Updater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Minecraft Mod Updater</h1>
+    
+    <form id="modForm">
+        <label for="modFile">Upload your mods ZIP file:</label><br><br>
+        <input type="file" id="modFile" accept=".zip"><br><br>
+
+        <label for="versionSelector">Select version:</label><br><br>
+        <select id="versionSelector">
+            <option value="">Loading versions...</option>
+        </select><br><br>
+
+        <button type="button" id="updateButton">Update Mods</button>
+    </form>
+
+    <div id="progress">
+        <p>Updating... Please wait.</p>
+    </div>
+
+    <div id="downloadSection" style="display: none;">
+        <p>Download the updated mods ZIP:</p>
+        <a id="downloadLink" href="" download="updated_mods.zip">Download</a>
+    </div>
+
+    <p style="font-size: 10px;">Not affiliated with Mojang or Microsoft.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="modUpdater.js"></script>
+</body>
+</html>
