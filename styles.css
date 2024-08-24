@@ -55,3 +55,46 @@ button:hover {
 #downloadSection {
     margin-top: 20px;
 }
+
+#logViewer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#logText {
+    white-space: pre-wrap;
+}
+
+#downloadLink {
+    color: var(--button-background-color);
+}
+
+#downloadLink:hover {
+    color: var(--button-background-color);
+    text-decoration: underline;
+}
+
+label[for="includeSnapshots"] {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#modForm {
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+}
